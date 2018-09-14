@@ -17,7 +17,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://yuanzhangguo.github.io/assets/Img/gsm.png">
 <meta property="og:image" content="https://yuanzhangguo.github.io/assets/Img/SIM900A.png">
-<meta property="og:updated_time" content="2018-09-14T23:19:49.147Z">
+<meta property="og:updated_time" content="2018-09-14T23:36:06.875Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GSM模块入门资料">
 <meta name="twitter:description" content="1.GSM简介及引脚 简介​              GSM模块，是将GSM射频芯片、基带处理芯片、存储器、功放器件等集成在一块线路板上，具有独立的操作系统、GSM射频处理、基带处理并提供标准接口的功能模块。 　　       GSM模块具有发送SMS短信，语音通话，GPRS数据传输等基于GSM网络进行通信的所有基本功能。">
@@ -183,7 +183,14 @@
 <p>​       10 STA    LED                   模组状态指示灯                     </p>
 <h3 id="2-与单片机的硬件连接"><a href="#2-与单片机的硬件连接" class="headerlink" title="2. 与单片机的硬件连接"></a>2. 与单片机的硬件连接</h3><p>​        将SIM模块的TX引脚连接到单片机的RX引脚，RX引脚连接到TX引脚上</p>
 <p><img src="\assets\Img\SIM900A.png" alt=""></p>
-<h3 id="3-单片机中需编写的程序"><a href="#3-单片机中需编写的程序" class="headerlink" title="3. 单片机中需编写的程序"></a>3. 单片机中需编写的程序</h3>
+<h3 id="3-单片机中发送编写的程序"><a href="#3-单片机中发送编写的程序" class="headerlink" title="3. 单片机中发送编写的程序"></a>3. 单片机中发送编写的程序</h3><p>​     在单片机进行程序编写的时候，配置发送模式，信息长度和信息。</p>
+<p>​     中文模式（PDU）需要通过汉字与Unicode码转换器转换为字符格式</p>
+<p>​     英文模式（TEXT）不需要转换</p>
+<p>​    1 SendString(“AT+CMGS=PDU”)；</p>
+<p>​    2 SendString(“AT+CMGS=XXXX”);   //第三条命令的字符长</p>
+<p>​    3 SendString（“XXXXXXXXXX”）；需要发送的信息，</p>
+<p>第三条命令的字符包括接受端的电话号码，以及需要发送的信息</p>
+
       
 
       
@@ -297,9 +304,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/09/11/SSL认证申请踩坑记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          SSL/TLS认证申请踩坑记
+        
+      </div>
+    </a>
   
-    <a href="/2018/09/11/SSL认证申请踩坑记/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">SSL/TLS认证申请踩坑记</div>
+  
+    <a href="/2017/07/08/vim编辑器.1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vim编辑器</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -326,7 +342,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-GSM简介及引脚"><span class="toc-number">1.</span> <span class="toc-text">1.GSM简介及引脚</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简介"><span class="toc-number">1.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引脚"><span class="toc-number">1.2.</span> <span class="toc-text">引脚</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-与单片机的硬件连接"><span class="toc-number">2.</span> <span class="toc-text">2. 与单片机的硬件连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-单片机中需编写的程序"><span class="toc-number">3.</span> <span class="toc-text">3. 单片机中需编写的程序</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-GSM简介及引脚"><span class="toc-number">1.</span> <span class="toc-text">1.GSM简介及引脚</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简介"><span class="toc-number">1.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引脚"><span class="toc-number">1.2.</span> <span class="toc-text">引脚</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-与单片机的硬件连接"><span class="toc-number">2.</span> <span class="toc-text">2. 与单片机的硬件连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-单片机中发送编写的程序"><span class="toc-number">3.</span> <span class="toc-text">3. 单片机中发送编写的程序</span></a></li></ol>
                     </div>
                 </span>
             </div>
