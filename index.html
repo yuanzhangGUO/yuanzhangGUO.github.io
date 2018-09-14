@@ -146,37 +146,31 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-stm32基于库函数的功能实现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-vim编辑器多页面 " class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/11/stm32基于库函数的功能实现/">stm32基于库函数的功能实现</a>
+      <a class="article-title" href="/2018/09/15/vim编辑器多页面 /">vim编辑多个文件</a>
     </h1>
   
 
         
-        <a href="/2018/09/11/stm32基于库函数的功能实现/" class="archive-article-date">
-  	<time datetime="2018-09-11T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
+        <a href="/2018/09/15/vim编辑器多页面 /" class="archive-article-date">
+  	<time datetime="2018-09-14T18:21:02.042Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1-led篇"><a href="#1-led篇" class="headerlink" title="1.led篇"></a>1.led篇</h1><p>GPIO_InitTypeDef  GPIO_InitStructure;</p>
-<p>RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);</p>
-<p>GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_13| GPIO_Pin_14| GPIO_Pin_15;</p>
-<p>GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;</p>
-<p>GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;</p>
-<p>GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;</p>
-<p>GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;</p>
-<p>GPIO_Init(GPIOD, &amp;GPIO_InitStructure);</p>
-        
-          <a class="article-more-a" href="/2018/09/11/stm32基于库函数的功能实现/#more">more >></a>
-        
+        <h5 id="编辑模式的命令"><a href="#编辑模式的命令" class="headerlink" title="编辑模式的命令"></a>编辑模式的命令</h5><p>【:w】 保存编辑的内容<br>【:w!】强制写入该文件，但跟你对该文件的权限有关<br>【:q】 离开vi<br>【:q!】 不想保存修改强制离开<br>【:wq】 保存后离开<br>【:x】 保存后离开<br>【ZZ】 若文件没有更动，则不保存离开，若文件已经被更改过，则保存后离开</p>
+<p>【:w filename】 将编辑的数据保存成另一个文件（类似另存）<br>【:r filename】 在编辑的数据中，读入另一个文件的数据。即将【filename】 这个文件的内容加到光标所在行后面。</p>
+<p>【:n1,n2 w filename】 将n1到n2的内容保存成filename这个文件。<br>【:! command】暂时离开vi 到命令行模式下执行command的显示结果！例如 【:! ls /home】即可在 vi 当中察看/home底下以ls输出的文件信息！</p>
+<p>【:set nu】 显示行号<br>【:set nonu】 与 set nu 相反，为取消行</p>
+
       
 
       
@@ -199,7 +193,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/11/stm32基于库函数的功能实现/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/09/15/vim编辑器多页面 /">展开全文 >></a>
         </p>
       
 
@@ -315,13 +309,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/11/vim编辑器.3/">vim编辑器.2</a>
+      <a class="article-title" href="/2017/07/10/vim编辑器.3/">vim编辑器.3</a>
     </h1>
   
 
         
-        <a href="/2018/09/11/vim编辑器.3/" class="archive-article-date">
-  	<time datetime="2018-09-11T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
+        <a href="/2017/07/10/vim编辑器.3/" class="archive-article-date">
+  	<time datetime="2017-07-10T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
 </a>
         
       </header>
@@ -332,6 +326,7 @@
 <p>【:w filename】 将编辑的数据保存成另一个文件（类似另存）<br>【:r filename】 在编辑的数据中，读入另一个文件的数据。即将【filename】 这个文件的内容加到光标所在行后面。</p>
 <p>【:n1,n2 w filename】 将n1到n2的内容保存成filename这个文件。<br>【:! command】暂时离开vi 到命令行模式下执行command的显示结果！例如 【:! ls /home】即可在 vi 当中察看/home底下以ls输出的文件信息！</p>
 <p>【:set nu】 显示行号<br>【:set nonu】 与 set nu 相反，为取消行</p>
+<p>#### </p>
 
       
 
@@ -355,90 +350,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/11/vim编辑器.3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vim编辑器.1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/10/vim编辑器.1/">vim编辑器.1</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/10/vim编辑器.1/" class="archive-article-date">
-  	<time datetime="2017-07-10T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-vim"><a href="#1-vim" class="headerlink" title="1.vim"></a>1.vim</h3><p>​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
-<p>​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式</p>
-<p>​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。</p>
-<h3 id="2-vim的安装"><a href="#2-vim的安装" class="headerlink" title="2.vim的安装"></a>2.vim的安装</h3><p>​    打开ubuntu的终端输入：sudo apt-get install vim-gtk</p>
-<h3 id="3-vim的具体模式"><a href="#3-vim的具体模式" class="headerlink" title="3.vim的具体模式"></a>3.vim的具体模式</h3><h4 id="vim的一般模式："><a href="#vim的一般模式：" class="headerlink" title="vim的一般模式："></a>vim的一般模式：</h4><h5 id="光标的移动："><a href="#光标的移动：" class="headerlink" title="光标的移动："></a>光标的移动：</h5><p>按【h、j、k、l】，分别控制光标左、下、上、右移一格<br>按【ctrl+b】屏幕往”后”移动一页<br>按【ctrl+f】屏幕往”前”移动一页</p>
-<p>按【n<space>】光标向右移动n个字符<br>按【Home】移动到这一行的最前面字符处:0数字，但不能用数字小键盘上的数字<br>按【w】光标跳到下个字的开头<br>按【e】光标跳到下个字的字尾</space></p>
-<p>按【H】 光标移动到这个屏幕的最上方那一行的第一个字符<br>按【M】 光标移动到这个屏幕的中间那一行的第一个字符<br>按【L】光标移动到这个屏幕的最下方那一行的第一个字符</p>
-<p>按【G】 移动到这个文件的最后一行<br>按【nG】移动到这个文件的第n行<br>按【gg】 移动到这个文件的第一行，相当于1G<br>按【n<enter>】光标向下移动n行​                        </enter></p>
-        
-          <a class="article-more-a" href="/2017/07/10/vim编辑器.1/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/10/vim编辑器.1/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/07/10/vim编辑器.3/">展开全文 >></a>
         </p>
       
 
@@ -475,13 +387,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/10/vim编辑器.2/">vim编辑器.2</a>
+      <a class="article-title" href="/2017/07/09/vim编辑器.2/">vim编辑器.2</a>
     </h1>
   
 
         
-        <a href="/2017/07/10/vim编辑器.2/" class="archive-article-date">
-  	<time datetime="2017-07-10T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
+        <a href="/2017/07/09/vim编辑器.2/" class="archive-article-date">
+  	<time datetime="2017-07-09T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-09</time>
 </a>
         
       </header>
@@ -530,7 +442,90 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/10/vim编辑器.2/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/07/09/vim编辑器.2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vim编辑器.1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/08/vim编辑器.1/">vim编辑器.1</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/08/vim编辑器.1/" class="archive-article-date">
+  	<time datetime="2017-07-08T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-vim"><a href="#1-vim" class="headerlink" title="1.vim"></a>1.vim</h3><p>​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
+<p>​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式</p>
+<p>​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。</p>
+<h3 id="2-vim的安装"><a href="#2-vim的安装" class="headerlink" title="2.vim的安装"></a>2.vim的安装</h3><p>​    打开ubuntu的终端输入：sudo apt-get install vim-gtk</p>
+<h3 id="3-vim的具体模式"><a href="#3-vim的具体模式" class="headerlink" title="3.vim的具体模式"></a>3.vim的具体模式</h3><h4 id="vim的一般模式："><a href="#vim的一般模式：" class="headerlink" title="vim的一般模式："></a>vim的一般模式：</h4><h5 id="光标的移动："><a href="#光标的移动：" class="headerlink" title="光标的移动："></a>光标的移动：</h5><p>按【h、j、k、l】，分别控制光标左、下、上、右移一格<br>按【ctrl+b】屏幕往”后”移动一页<br>按【ctrl+f】屏幕往”前”移动一页</p>
+<p>按【n<space>】光标向右移动n个字符<br>按【Home】移动到这一行的最前面字符处:0数字，但不能用数字小键盘上的数字<br>按【w】光标跳到下个字的开头<br>按【e】光标跳到下个字的字尾</space></p>
+<p>按【H】 光标移动到这个屏幕的最上方那一行的第一个字符<br>按【M】 光标移动到这个屏幕的中间那一行的第一个字符<br>按【L】光标移动到这个屏幕的最下方那一行的第一个字符</p>
+<p>按【G】 移动到这个文件的最后一行<br>按【nG】移动到这个文件的第n行<br>按【gg】 移动到这个文件的第一行，相当于1G<br>按【n<enter>】光标向下移动n行​                        </enter></p>
+        
+          <a class="article-more-a" href="/2017/07/08/vim编辑器.1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/08/vim编辑器.1/">展开全文 >></a>
         </p>
       
 

@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yuanzhangGUO.github.io">
-  <title>vim编辑器.1 | 郭家大少的博客</title>
+  <title>vim编辑器.3 | 郭家大少的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.vim​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。 ​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式 ​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。 2.vim的安装​    打开ubuntu的终端输入：sudo apt-g">
+  <meta name="description" content="编辑模式的命令【:w】 保存编辑的内容【:w!】强制写入该文件，但跟你对该文件的权限有关【:q】 离开vi【:q!】 不想保存修改强制离开【:wq】 保存后离开【:x】 保存后离开【ZZ】 若文件没有更动，则不保存离开，若文件已经被更改过，则保存后离开 【:w filename】 将编辑的数据保存成另一个文件（类似另存）【:r filename】 在编辑的数据中，读入另一个文件的数据。即将【fil">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vim编辑器.1">
-<meta property="og:url" content="https://yuanzhangGUO.github.io/2017/07/10/vim编辑器.1/index.html">
+<meta property="og:title" content="vim编辑器.3">
+<meta property="og:url" content="https://yuanzhangGUO.github.io/2017/07/10/vim编辑器.3/index.html">
 <meta property="og:site_name" content="郭家大少的博客">
-<meta property="og:description" content="1.vim​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。 ​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式 ​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。 2.vim的安装​    打开ubuntu的终端输入：sudo apt-g">
+<meta property="og:description" content="编辑模式的命令【:w】 保存编辑的内容【:w!】强制写入该文件，但跟你对该文件的权限有关【:q】 离开vi【:q!】 不想保存修改强制离开【:wq】 保存后离开【:x】 保存后离开【ZZ】 若文件没有更动，则不保存离开，若文件已经被更改过，则保存后离开 【:w filename】 将编辑的数据保存成另一个文件（类似另存）【:r filename】 在编辑的数据中，读入另一个文件的数据。即将【fil">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-14T18:19:50.899Z">
+<meta property="og:updated_time" content="2018-09-14T18:28:50.958Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vim编辑器.1">
-<meta name="twitter:description" content="1.vim​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。 ​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式 ​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。 2.vim的安装​    打开ubuntu的终端输入：sudo apt-g">
+<meta name="twitter:title" content="vim编辑器.3">
+<meta name="twitter:description" content="编辑模式的命令【:w】 保存编辑的内容【:w!】强制写入该文件，但跟你对该文件的权限有关【:q】 离开vi【:q!】 不想保存修改强制离开【:wq】 保存后离开【:x】 保存后离开【ZZ】 若文件没有更动，则不保存离开，若文件已经被更改过，则保存后离开 【:w filename】 将编辑的数据保存成另一个文件（类似另存）【:r filename】 在编辑的数据中，读入另一个文件的数据。即将【fil">
   
   
     <link rel="icon" href="/assets/Img/header.ico">
@@ -148,19 +148,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vim编辑器.1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vim编辑器.3" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vim编辑器.1
+      vim编辑器.3
     </h1>
   
 
         
-        <a href="/2017/07/10/vim编辑器.1/" class="archive-article-date">
+        <a href="/2017/07/10/vim编辑器.3/" class="archive-article-date">
   	<time datetime="2017-07-10T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
 </a>
         
@@ -168,18 +168,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-vim"><a href="#1-vim" class="headerlink" title="1.vim"></a>1.vim</h3><p>​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
-<p>​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式</p>
-<p>​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。</p>
-<h3 id="2-vim的安装"><a href="#2-vim的安装" class="headerlink" title="2.vim的安装"></a>2.vim的安装</h3><p>​    打开ubuntu的终端输入：sudo apt-get install vim-gtk</p>
-<h3 id="3-vim的具体模式"><a href="#3-vim的具体模式" class="headerlink" title="3.vim的具体模式"></a>3.vim的具体模式</h3><h4 id="vim的一般模式："><a href="#vim的一般模式：" class="headerlink" title="vim的一般模式："></a>vim的一般模式：</h4><h5 id="光标的移动："><a href="#光标的移动：" class="headerlink" title="光标的移动："></a>光标的移动：</h5><p>按【h、j、k、l】，分别控制光标左、下、上、右移一格<br>按【ctrl+b】屏幕往”后”移动一页<br>按【ctrl+f】屏幕往”前”移动一页</p>
-<p>按【n<space>】光标向右移动n个字符<br>按【Home】移动到这一行的最前面字符处:0数字，但不能用数字小键盘上的数字<br>按【w】光标跳到下个字的开头<br>按【e】光标跳到下个字的字尾</space></p>
-<p>按【H】 光标移动到这个屏幕的最上方那一行的第一个字符<br>按【M】 光标移动到这个屏幕的中间那一行的第一个字符<br>按【L】光标移动到这个屏幕的最下方那一行的第一个字符</p>
-<p>按【G】 移动到这个文件的最后一行<br>按【nG】移动到这个文件的第n行<br>按【gg】 移动到这个文件的第一行，相当于1G<br>按【n<enter>】光标向下移动n行​                        </enter></p>
-<a id="more"></a>
-<h5 id="查找与替换"><a href="#查找与替换" class="headerlink" title="查找与替换"></a>查找与替换</h5><p>【/stu】 向光标向下寻找一个名称为stu的字符串<br>【?stu】 向光标向上寻找一个名称为stu的字符串<br>【n】 代表重复前一个查找的动作<br>【N】 与n刚好相反，为【反向】进行行前一个查找动作</p>
-<p>【:n1,n2s/stu/data/g】  n1与n2为数字，在第n1与n2行之间将该字符串stu替换为word2</p>
-<p>【:1,$s/stu/data/g】 从第一行到最后一行将stu字符串替换为data<br>【:1,$s/stu/data/gc】 从第一行到最后一行将该stu字符串替换为data，且在替换前提示用户确认是否进行替换</p>
+        <h5 id="编辑模式的命令"><a href="#编辑模式的命令" class="headerlink" title="编辑模式的命令"></a>编辑模式的命令</h5><p>【:w】 保存编辑的内容<br>【:w!】强制写入该文件，但跟你对该文件的权限有关<br>【:q】 离开vi<br>【:q!】 不想保存修改强制离开<br>【:wq】 保存后离开<br>【:x】 保存后离开<br>【ZZ】 若文件没有更动，则不保存离开，若文件已经被更改过，则保存后离开</p>
+<p>【:w filename】 将编辑的数据保存成另一个文件（类似另存）<br>【:r filename】 在编辑的数据中，读入另一个文件的数据。即将【filename】 这个文件的内容加到光标所在行后面。</p>
+<p>【:n1,n2 w filename】 将n1到n2的内容保存成filename这个文件。<br>【:! command】暂时离开vi 到命令行模式下执行command的显示结果！例如 【:! ls /home】即可在 vi 当中察看/home底下以ls输出的文件信息！</p>
+<p>【:set nu】 显示行号<br>【:set nonu】 与 set nu 相反，为取消行</p>
+<p>#### </p>
 
       
 
@@ -280,7 +273,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://yuanzhangGUO.github.io/2017/07/10/vim编辑器.1/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yuanzhangGUO.github.io/2017/07/10/vim编辑器.3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -294,17 +287,17 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/09/11/vim编辑器.3/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/09/11/SSL认证申请踩坑记/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          vim编辑器.2
+          SSL/TLS认证申请踩坑记
         
       </div>
     </a>
   
   
-    <a href="/2017/07/10/vim编辑器.2/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/07/09/vim编辑器.2/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">vim编辑器.2</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -332,7 +325,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-vim"><span class="toc-number">1.</span> <span class="toc-text">1.vim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-vim的安装"><span class="toc-number">2.</span> <span class="toc-text">2.vim的安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-vim的具体模式"><span class="toc-number">3.</span> <span class="toc-text">3.vim的具体模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#vim的一般模式："><span class="toc-number">3.1.</span> <span class="toc-text">vim的一般模式：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#光标的移动："><span class="toc-number">3.1.1.</span> <span class="toc-text">光标的移动：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#查找与替换"><span class="toc-number">3.1.2.</span> <span class="toc-text">查找与替换</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#编辑模式的命令"><span class="toc-number">1.</span> <span class="toc-text">编辑模式的命令</span></a></li></ol>
                     </div>
                 </span>
             </div>
