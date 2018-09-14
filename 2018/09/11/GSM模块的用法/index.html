@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yuanzhangGUO.github.io">
-  <title>郭家大少的博客</title>
+  <title>GSM模块入门资料 | 郭家大少的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="郭家大少的博客">
-<meta property="og:url" content="https://yuanzhangGUO.github.io/index.html">
+  <meta name="description" content="1.GSM简介及引脚 简介​       GSM模块，是将GSM射频芯片、基带处理芯片、存储器、功放器件等集成在一块线路板上，具有独立的操作系统、GSM射频处理、基带处理并提供标准接口的功能模块。 　　GSM模块具有发送SMS短信，语音通话，GPRS数据传输等基于GSM网络进行通信的所有基本功能。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GSM模块入门资料">
+<meta property="og:url" content="https://yuanzhangGUO.github.io/2018/09/11/GSM模块的用法/index.html">
 <meta property="og:site_name" content="郭家大少的博客">
+<meta property="og:description" content="1.GSM简介及引脚 简介​       GSM模块，是将GSM射频芯片、基带处理芯片、存储器、功放器件等集成在一块线路板上，具有独立的操作系统、GSM射频处理、基带处理并提供标准接口的功能模块。 　　GSM模块具有发送SMS短信，语音通话，GPRS数据传输等基于GSM网络进行通信的所有基本功能。">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://yuanzhangguo.github.io/assets/blogImg/gsm.jpg">
+<meta property="og:image" content="https://yuanzhangguo.github.io/assets/blogImg/SIM900A.png">
+<meta property="og:image" content="https://yuanzhangguo.github.io/assets/blogImg/SSL.png">
+<meta property="og:image" content="https://yuanzhangguo.github.io/assets/blogImg/httpsBAidu.png">
+<meta property="og:updated_time" content="2018-09-14T23:09:52.927Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="郭家大少的博客">
+<meta name="twitter:title" content="GSM模块入门资料">
+<meta name="twitter:description" content="1.GSM简介及引脚 简介​       GSM模块，是将GSM射频芯片、基带处理芯片、存储器、功放器件等集成在一块线路板上，具有独立的操作系统、GSM射频处理、基带处理并提供标准接口的功能模块。 　　GSM模块具有发送SMS短信，语音通话，GPRS数据传输等基于GSM网络进行通信的所有基本功能。">
+<meta name="twitter:image" content="https://yuanzhangguo.github.io/assets/blogImg/gsm.jpg">
   
   
     <link rel="icon" href="/assets/Img/header.ico">
@@ -140,95 +149,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-SSL认证申请踩坑记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-GSM模块的用法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/11/SSL认证申请踩坑记/">SSL/TLS认证申请踩坑记</a>
-    </h1>
-  
-
-        
-        <a href="/2018/09/11/SSL认证申请踩坑记/" class="archive-article-date">
-  	<time datetime="2018-09-11T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22789069&auto=0&height=66"></iframe>
-
-<h3 id="1-SSL-TLS证书简介（摘自维基百科）"><a href="#1-SSL-TLS证书简介（摘自维基百科）" class="headerlink" title="1.SSL/TLS证书简介（摘自维基百科）"></a>1.SSL/TLS证书简介（摘自维基百科）</h3><p><img src="\assets\blogImg\scure.jpg" alt=""></p>
-<p><strong>传输层安全性协议</strong>（英语：Transport Layer Security，<a href="https://zh.wikipedia.org/wiki/%E7%B8%AE%E5%AF%AB" target="_blank" rel="noopener">缩写</a>作 <strong>TLS</strong>），及其前身<strong>安全套接层</strong>（Secure Sockets Layer，缩写作 <strong>SSL</strong>）是一种<a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">安全协议</a>，目的是为<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF" target="_blank" rel="noopener">互联网</a>通信，提供安全及数据<a href="https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E6%80%A7" target="_blank" rel="noopener">完整性</a>保障。<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E6%99%AF" target="_blank" rel="noopener">网景</a>公司（Netscape）在1994年推出首版<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%A0%81%E7%80%8F%E8%A6%BD%E5%99%A8" target="_blank" rel="noopener">网页浏览器</a>，<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E6%99%AF%E9%A0%98%E8%88%AA%E5%93%A1" target="_blank" rel="noopener">网景导航者</a>时，推出<a href="https://zh.wikipedia.org/wiki/HTTPS" target="_blank" rel="noopener">HTTPS</a>协议，以SSL进行加密，这是SSL的起源。<a href="https://zh.wikipedia.org/wiki/IETF" target="_blank" rel="noopener">IETF</a>将SSL进行标准化，1999年公布第一版TLS标准文件。随后又公布RFC 5246 （2008年8月）与 <a href="https://tools.ietf.org/html/rfc6176" target="_blank" rel="noopener">RFC 6176</a> （2011年3月）。在<a href="https://zh.wikipedia.org/wiki/%E7%80%8F%E8%A6%BD%E5%99%A8" target="_blank" rel="noopener">浏览器</a>、<a href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6" target="_blank" rel="noopener">电子邮件</a>、<a href="https://zh.wikipedia.org/wiki/%E5%8D%B3%E6%99%82%E9%80%9A%E8%A8%8A" target="_blank" rel="noopener">即时通信</a>、<a href="https://zh.wikipedia.org/wiki/VoIP" target="_blank" rel="noopener">VoIP</a>、<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E7%B5%A1%E5%82%B3%E7%9C%9F" target="_blank" rel="noopener">网络传真</a>等应用程序中，广泛支持这个协议。主要的网站，如<a href="https://zh.wikipedia.org/wiki/Google" target="_blank" rel="noopener">Google</a>、<a href="https://zh.wikipedia.org/wiki/Facebook" target="_blank" rel="noopener">Facebook</a>等也以这个协议来创建安全连线，发送数据。目前已成为<a href="https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91" target="_blank" rel="noopener">互联网</a>上保密通信的工业标准。</p>
-        
-          <a class="article-more-a" href="/2018/09/11/SSL认证申请踩坑记/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/11/SSL认证申请踩坑记/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-GSM模块的用法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/11/GSM模块的用法/">GSM模块入门资料</a>
+    <h1 class="article-title" itemprop="name">
+      GSM模块入门资料
     </h1>
   
 
@@ -244,11 +172,56 @@
         <h3 id="1-GSM简介及引脚"><a href="#1-GSM简介及引脚" class="headerlink" title="1.GSM简介及引脚"></a>1.GSM简介及引脚</h3><p><img src="\assets\blogImg\gsm.jpg" alt=""></p>
 <h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>​       GSM模块，是将GSM射频芯片、基带处理芯片、存储器、功放器件等集成在一块线路板上，具有独立的操作系统、GSM射频处理、基带处理并提供标准接口的功能模块。</p>
 <p>　　GSM模块具有发送SMS短信，语音通话，GP<a href="http://www.elecfans.com/tags/RS/" target="_blank" rel="noopener">RS</a>数据传输等基于GSM网络进行通信的所有基本功能。</p>
-        
-          <a class="article-more-a" href="/2018/09/11/GSM模块的用法/#more">more >></a>
-        
+<a id="more"></a>
+<h4 id="引脚"><a href="#引脚" class="headerlink" title="引脚"></a>引脚</h4><p>​    1   电源芯片JW5033H    输入4.7-18V，输出3.8V/2A</p>
+<p>​    2  电源指示灯                 当板子通电后，指示灯亮 </p>
+<p>​    3  ZH1.5MM座子           模组的通信串口，可以通过AT指令和模组通信 </p>
+<p>​        4  贴片SIM卡                   预留接口</p>
+<p>​        5  SIM的TVS保护套         选贴，内部带SIM卡的不贴，外接SIM卡的接</p>
+<p>​        6  1000uF电容                滤波和稳压电容，减小电源纹波</p>
+<p>​        7  N10                              GPRS模组   </p>
+<p>​    8  排针                             将模组需要用到的管脚全部引出</p>
+<p>​        9  NET   LED                    网络指示灯</p>
+<p>​       10 STA    LED                   模组状态指示灯                     </p>
+<h3 id="2-与单片机的硬件连接"><a href="#2-与单片机的硬件连接" class="headerlink" title="2. 与单片机的硬件连接"></a>2. 与单片机的硬件连接</h3><p><img src="\assets\blogImg\SIM900A.png" alt=""></p>
+<h3 id="3-单片机中需编写的程序"><a href="#3-单片机中需编写的程序" class="headerlink" title="3. 单片机中需编写的程序"></a>3. 单片机中需编写的程序</h3><p><img src="\assets\blogImg\SSL.png" alt=""></p>
+<p>最后，再次返回腾讯云域名解析的后台，将红框内的线路再次启用，顺利解决。此时去申请百度长站的https认证也成功了，抓取数据也ok了。</p>
+<p><img src="\assets\blogImg\httpsBAidu.png" alt=""></p>
+<p>总结：先关掉国外的线路解析，然后申请SSL证书，成功后再启用之前关掉的线路。</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/Img/ailipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/Img/wenxinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -268,16 +241,84 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/11/GSM模块的用法/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yuanzhangGUO.github.io/2018/09/11/GSM模块的用法/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/09/11/SSL认证申请踩坑记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          SSL/TLS认证申请踩坑记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/08/vim编辑器.1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vim编辑器</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -292,92 +333,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vim编辑器.1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/08/vim编辑器.1/">vim编辑器</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/08/vim编辑器.1/" class="archive-article-date">
-  	<time datetime="2017-07-08T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-vim"><a href="#1-vim" class="headerlink" title="1.vim"></a>1.vim</h3><p>​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
-<p>​     基本上vi可以分为三种状态，分别是一般模式、编辑模式和命令行模式</p>
-<p>​     例如把当前文件所有的stu修改为data的命令：.，$s/stu/data/g 稍后进行具体讲解。</p>
-<h3 id="2-vim的安装"><a href="#2-vim的安装" class="headerlink" title="2.vim的安装"></a>2.vim的安装</h3><p>​    打开ubuntu的终端输入：sudo apt-get install vim-gtk</p>
-        
-          <a class="article-more-a" href="/2017/07/08/vim编辑器.1/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/08/vim编辑器.1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-GSM简介及引脚"><span class="toc-number">1.</span> <span class="toc-text">1.GSM简介及引脚</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简介"><span class="toc-number">1.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引脚"><span class="toc-number">1.2.</span> <span class="toc-text">引脚</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-与单片机的硬件连接"><span class="toc-number">2.</span> <span class="toc-text">2. 与单片机的硬件连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-单片机中需编写的程序"><span class="toc-number">3.</span> <span class="toc-text">3. 单片机中需编写的程序</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -400,8 +381,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
