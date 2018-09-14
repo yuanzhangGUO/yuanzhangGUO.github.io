@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="郭家大少的博客">
 <meta property="og:description" content="1.vim​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。 ​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式 ​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。 2.vim的安装​    打开ubuntu的终端输入：sudo apt-g">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-14T18:34:57.502Z">
+<meta property="og:updated_time" content="2018-09-14T18:39:17.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vim编辑器.1">
 <meta name="twitter:description" content="1.vim​     vim是一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。 ​     基本上vi可以分为三种状态，分别是一般模式、编辑模式、块选择模式和命令行模式 ​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。 2.vim的安装​    打开ubuntu的终端输入：sudo apt-g">
@@ -173,10 +173,10 @@
 <p>​     例如把当前文件所有的stu修改为data的命令：.，$s/vivian/sky/g 稍后进行具体讲解。</p>
 <h3 id="2-vim的安装"><a href="#2-vim的安装" class="headerlink" title="2.vim的安装"></a>2.vim的安装</h3><p>​    打开ubuntu的终端输入：sudo apt-get install vim-gtk</p>
 <h3 id="3-vim的具体模式"><a href="#3-vim的具体模式" class="headerlink" title="3.vim的具体模式"></a>3.vim的具体模式</h3><h4 id="vim的一般模式："><a href="#vim的一般模式：" class="headerlink" title="vim的一般模式："></a>vim的一般模式：</h4><h5 id="光标的移动："><a href="#光标的移动：" class="headerlink" title="光标的移动："></a>光标的移动：</h5><p>按【h、j、k、l】，分别控制光标左、下、上、右移一格<br>按【ctrl+b】屏幕往”后”移动一页<br>按【ctrl+f】屏幕往”前”移动一页</p>
+<a id="more"></a>
 <p>按【n<space>】光标向右移动n个字符<br>按【Home】移动到这一行的最前面字符处:0数字，但不能用数字小键盘上的数字<br>按【w】光标跳到下个字的开头<br>按【e】光标跳到下个字的字尾</space></p>
 <p>按【H】 光标移动到这个屏幕的最上方那一行的第一个字符<br>按【M】 光标移动到这个屏幕的中间那一行的第一个字符<br>按【L】光标移动到这个屏幕的最下方那一行的第一个字符</p>
 <p>按【G】 移动到这个文件的最后一行<br>按【nG】移动到这个文件的第n行<br>按【gg】 移动到这个文件的第一行，相当于1G<br>按【n<enter>】光标向下移动n行​                        </enter></p>
-<a id="more"></a>
 <h5 id="查找与替换"><a href="#查找与替换" class="headerlink" title="查找与替换"></a>查找与替换</h5><p>【/stu】 向光标向下寻找一个名称为stu的字符串<br>【?stu】 向光标向上寻找一个名称为stu的字符串<br>【n】 代表重复前一个查找的动作<br>【N】 与n刚好相反，为【反向】进行行前一个查找动作</p>
 <p>【:n1,n2s/stu/data/g】  n1与n2为数字，在第n1与n2行之间将该字符串stu替换为word2</p>
 <p>【:1,$s/stu/data/g】 从第一行到最后一行将stu字符串替换为data<br>【:1,$s/stu/data/gc】 从第一行到最后一行将该stu字符串替换为data，且在替换前提示用户确认是否进行替换</p>
