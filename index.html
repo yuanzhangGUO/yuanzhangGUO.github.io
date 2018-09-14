@@ -146,6 +146,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-stm32基于库函数的功能实现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/11/stm32基于库函数的功能实现/">stm32基于库函数的功能实现</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/11/stm32基于库函数的功能实现/" class="archive-article-date">
+  	<time datetime="2018-09-11T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-led篇"><a href="#1-led篇" class="headerlink" title="1.led篇"></a>1.led篇</h1><p>GPIO_InitTypeDef  GPIO_InitStructure;</p>
+<p>RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);</p>
+<p>GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_13| GPIO_Pin_14| GPIO_Pin_15;</p>
+<p>GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;</p>
+<p>GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;</p>
+<p>GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;</p>
+<p>GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;</p>
+<p>GPIO_Init(GPIOD, &amp;GPIO_InitStructure);</p>
+        
+          <a class="article-more-a" href="/2018/09/11/stm32基于库函数的功能实现/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/11/stm32基于库函数的功能实现/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-SSL认证申请踩坑记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
