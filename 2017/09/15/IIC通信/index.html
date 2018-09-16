@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yuanzhangGUO.github.io">
-  <title>Archives: 2017 | 郭家大少的博客</title>
+  <title>IIC通信 | 郭家大少的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="郭家大少的博客">
-<meta property="og:url" content="https://yuanzhangGUO.github.io/archives/2017/index.html">
+  <meta name="description" content="1.基本概念串行通信与并行通信   串行通信：数据按位顺序传输       优点：引脚资源占用少         缺点：传输速度慢    并行通信：数据各个位同时传输    优点：传输速度快                缺点：引脚资源占用较多 单工，半双工和全双工​    单工：数据传输只支持数据在一个方向的传输，例a ​    半双工：允许数据在两个方向上传输，但是，在某一时刻，只允许数据在一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IIC通信">
+<meta property="og:url" content="https://yuanzhangGUO.github.io/2017/09/15/IIC通信/index.html">
 <meta property="og:site_name" content="郭家大少的博客">
+<meta property="og:description" content="1.基本概念串行通信与并行通信   串行通信：数据按位顺序传输       优点：引脚资源占用少         缺点：传输速度慢    并行通信：数据各个位同时传输    优点：传输速度快                缺点：引脚资源占用较多 单工，半双工和全双工​    单工：数据传输只支持数据在一个方向的传输，例a ​    半双工：允许数据在两个方向上传输，但是，在某一时刻，只允许数据在一">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://yuanzhangguo.github.io/assets/Img/uart1.png">
+<meta property="og:updated_time" content="2018-09-16T07:03:11.259Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="郭家大少的博客">
+<meta name="twitter:title" content="IIC通信">
+<meta name="twitter:description" content="1.基本概念串行通信与并行通信   串行通信：数据按位顺序传输       优点：引脚资源占用少         缺点：传输速度慢    并行通信：数据各个位同时传输    优点：传输速度快                缺点：引脚资源占用较多 单工，半双工和全双工​    单工：数据传输只支持数据在一个方向的传输，例a ​    半双工：允许数据在两个方向上传输，但是，在某一时刻，只允许数据在一">
+<meta name="twitter:image" content="https://yuanzhangguo.github.io/assets/Img/uart1.png">
   
   
     <link rel="icon" href="/assets/Img/header.ico">
@@ -140,37 +146,112 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-IIC通信" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      IIC通信
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/15/IIC通信/" class="archive-article-date">
+
+        
+        <a href="/2017/09/15/IIC通信/" class="archive-article-date">
   	<time datetime="2017-09-15T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/15/IIC通信/">IIC通信</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h3><h4 id="串行通信与并行通信"><a href="#串行通信与并行通信" class="headerlink" title="串行通信与并行通信"></a>串行通信与并行通信</h4><p>   串行通信：数据按位顺序传输       优点：引脚资源占用少         缺点：传输速度慢</p>
+<p>   并行通信：数据各个位同时传输    优点：传输速度快                缺点：引脚资源占用较多</p>
+<h4 id="单工，半双工和全双工"><a href="#单工，半双工和全双工" class="headerlink" title="单工，半双工和全双工"></a>单工，半双工和全双工</h4><p>​    单工：数据传输只支持数据在一个方向的传输，例a</p>
+<p>​    半双工：允许数据在两个方向上传输，但是，在某一时刻，只允许数据在一个方向上传输，它实际上是一种切换方向的单工通信，例b</p>
+<p>​    全双工：允许数据同时在两个方向上传输，因此，全双工通信是两个单工通信方式的结合，它要求发送设备和接收设备都有独立的接收和发送能力，例c</p>
+<p><img src="\assets\Img\uart1.png" alt=""></p>
+<a id="more"></a>
+<h4 id="串行通信的通信方式"><a href="#串行通信的通信方式" class="headerlink" title="串行通信的通信方式"></a>串行通信的通信方式</h4><p>​    同步通信：带时钟同步信号传输。例SPI，IIC通信接口<br>​    异步通信：不带时钟同步信号。例UART(通用异步收发器),单总线</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><table>
+<thead>
+<tr>
+<th>通信标准</th>
+<th>引脚说明</th>
+<th>通信方式</th>
+<th>通信方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UART(通用异步收发器)</td>
+<td>TXD:发送端RXD:接受端GND:公共地</td>
+<td>异步通信</td>
+<td>全双工</td>
+</tr>
+<tr>
+<td>单总线（1-wire)</td>
+<td>DQ:发送/接受端</td>
+<td>异步通信</td>
+<td>半双工</td>
+</tr>
+<tr>
+<td>SPI</td>
+<td>SCK:同步时钟MISO:主机输入，从机输出MOSI:主机输出，从机输入</td>
+<td>同步通信</td>
+<td>全双工</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>SCL:同步时钟SDA:数据输入/输出端</td>
+<td>同步通信</td>
+<td>半双工</td>
+</tr>
+</tbody>
+</table>
+<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>​              GSM模块，是将GSM射频芯片、基带处理芯片、存储器、功放器件等集成在一块线路板上，具有独立的操作系统、GSM射频处理、基带处理并提供标准接口的功能模块。</p>
+<p>　　       GSM模块具有发送SMS短信，语音通话，GP<a href="http://www.elecfans.com/tags/RS/" target="_blank" rel="noopener">RS</a>数据传输等基于GSM网络进行通信的所有基本功能。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/Img/ailipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/Img/wenxinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -183,93 +264,126 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://yuanzhangGUO.github.io/2017/09/15/IIC通信/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/11/GSM模块的用法/" class="archive-article-date">
-  	<time datetime="2017-09-11T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-11</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/09/11/SSL认证申请踩坑记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          SSL/TLS认证申请踩坑记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/11/GSM模块的用法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">GSM模块入门资料</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/11/GSM模块的用法/">GSM模块入门资料</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-基本概念"><span class="toc-number">1.</span> <span class="toc-text">1.基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#串行通信与并行通信"><span class="toc-number">1.1.</span> <span class="toc-text">串行通信与并行通信</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#单工，半双工和全双工"><span class="toc-number">1.2.</span> <span class="toc-text">单工，半双工和全双工</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#串行通信的通信方式"><span class="toc-number">1.3.</span> <span class="toc-text">串行通信的通信方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#总结"><span class="toc-number">1.4.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#简介"><span class="toc-number">1.5.</span> <span class="toc-text">简介</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/08/vim编辑器.1/" class="archive-article-date">
-  	<time datetime="2017-07-08T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/08/vim编辑器.1/">vim编辑器</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -292,8 +406,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
